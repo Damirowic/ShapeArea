@@ -11,7 +11,7 @@ public class Circle {
 		rc.close();
 	}
 	
-	public void calArea() {
+	public void calcArea() {
 		double area = this.radius * Math.PI;
 		System.out.println("The area of the circle is " + area);
 	}

@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ShapeArea {
 	String name;
 	String shape;
+	double r;
 	
 	
 	private void sayHi() {
@@ -16,6 +17,8 @@ public class ShapeArea {
         System.out.println(" ");
         String thisShape = sc.nextLine();
         this.shape = thisShape.toLowerCase();
+        this.r = sc.nextDouble();
+        System.out.println(r);
         sc.close();
        
 	}
@@ -30,7 +33,7 @@ public class ShapeArea {
 		if (userName.shape.equals("circle")) {
 			Circle newCircle = new Circle();
 			newCircle.setRadius();
-			//newCircle.calArea();
+			newCircle.calcArea();
 		}
 	}
 
